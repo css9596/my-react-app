@@ -5,8 +5,8 @@ import Cleanup from "./Cleanup";
 
 ReactDOM.render(
   <React.StrictMode>
-      {/*<App />*/}
-      <Cleanup/>
+      <App />
+      {/*<Cleanup/>*/}
   </React.StrictMode>,
   document.getElementById('root')
 );
