@@ -1,34 +1,20 @@
-import {useState, useEffect} from "react";
+import React, {Component} from 'react';
+import {connect} from 'react-redux';
 
-function App() {
-    const [toDo, setToDo] = useState("");
-    const [toDos, setToDos] = useState([]);
-    const onChange = (event) => {
-        setToDo(event.target.value);
-    }
-    const onSubmit = (event) => {
-        event.preventDefault();
-        if(toDo === ""){
-            return;
-        }
-        setToDos(currentArray => [toDo, ...currentArray]);
-        setToDo("");
-    }
-    return (
-        <div>
-            <h1>My To Do List ({toDos.length})</h1>
-            <form onSubmit={onSubmit}>
-                <input onChange = {onChange} type="text" placeholder="Write your to do.."/>
-                <button>Add To Do</button>
-            </form>
-            <hr/>
-            {toDos.map((item, index)=>
-                <ul>
-                    <li key={index}>{item}</li>
-                </ul>
-            )}
-        </div>
-    );
+function mapStateToProps(state) {
+    return {};
 }
 
-export default App;
+class App extends Component {
+    render() {
+        return (
+            <div>
+                
+            </div>
+        );
+    }
+}
+
+export default connect(
+    mapStateToProps,
+)(App);
