@@ -1,20 +1,22 @@
-import React, {Component} from 'react';
-import {connect} from 'react-redux';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+} from "react-router-dom";
+import Home from "./routes/Home";
+import Detail from "./routes/Detail";
 
-function mapStateToProps(state) {
-    return {};
+function App() {
+    return <Router>
+                <Switch>
+                    <Route exact path="/">
+                        <Home/>
+                    </Route>
+                    <Route exact path="/movie/:id">
+                        <Detail />
+                    </Route>
+                </Switch>
+            </Router>;
 }
 
-class App extends Component {
-    render() {
-        return (
-            <div>
-                
-            </div>
-        );
-    }
-}
-
-export default connect(
-    mapStateToProps,
-)(App);
+export default App;
