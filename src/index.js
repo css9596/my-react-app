@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import MyToDoList from './MyToDoList';
 import Cleanup from "./Cleanup";
-
+import App from './App';
 ReactDOM.render(
   <React.StrictMode>
-      <App />
+      {/*<MyToDoList />*/}
       {/*<Cleanup/>*/}
+      <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
