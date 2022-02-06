@@ -9,11 +9,11 @@ import Detail from "./routes/Detail";
 function App() {
     return <Router basename={process.env.PUBLIC_URL}>
                 <Switch>
-                    <Route exact path={process.env.PUBLIC_URL + '/'}>
-                        <Home/>
-                    </Route>
-                    <Route exact path={process.env.PUBLIC_URL + '/movie/:id'}>
+                    <Route path={process.env.PUBLIC_URL + '/movie/:id'}>
                         <Detail />
+                    </Route>
+                    <Route path={process.env.PUBLIC_URL + '/'}>
+                        <Home/>
                     </Route>
                 </Switch>
             </Router>;
