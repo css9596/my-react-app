@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.e12e47bc.css","mappings":"AAAA,iBAEI,uBAA2B,CAC3B,2BAA4B,CAC5B,qBAAsB,CAHtB,WAIJ","sources":["css/Detail.css"],"sourcesContent":[".backGroundImage {\n    height: 100%;\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n}"],"names":[],"sourceRoot":""}
