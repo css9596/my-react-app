@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MyToDoList from './MyToDoList';
-import Cleanup from "./Cleanup";
 import App from './App';
+import "./styles.css";
+
 ReactDOM.render(
   <React.StrictMode>
       {/*<MyToDoList />*/}
