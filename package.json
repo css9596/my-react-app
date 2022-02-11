@@ -18,7 +18,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "eject": "e-scripts eject",
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build"
   },
@@ -40,5 +40,5 @@
       "last 1 safari version"
     ]
   },
-  "hompage": "https://css9596.github.io/my-react-app"
+  "homepage": "https://css9596.github.io/my-react-app"
 }
